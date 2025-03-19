@@ -1,4 +1,4 @@
-const canvas = document.querySelector("canvas");
+const canvas = document.querySelector(".canvas");
 const inputSize = document.querySelector(".input-size");
 const inputColor = document.querySelector(".input-color");
 const usedColors = document.querySelector(".used-colors");
@@ -6,7 +6,7 @@ const buttonSave = document.querySelector(".button-save");
 const colResize = document.querySelector(".resize");
 const main = document.querySelector("main");
 
-const MIN_CANVAS_SIZE = 4;
+const minCanvasSize = 4;
 
 let isPainting = false;
 let isResizing = false;
@@ -48,7 +48,7 @@ const loadCanvas = () => {
 };
 
 const updateCanvasSize = () => {
-    if (inputSize.value >= MIN_CANVAS_SIZE) {
+    if (inputSize.value >= minCanvasSize) {
         loadCanvas();
     }
 };
